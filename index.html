@@ -19,30 +19,80 @@
     <div class="container">
       <form id="order-form">
         <div class="form-group">
-          <div class="row">
-            <div>
-              <h2><span class="sections">Size of Your Pie?</span></h2>
-            </div>
+          <div class="sections">
+            <h2>Size of Your Pie?</h2>
           </div>
-          <div class="row">
+          <!--<div class="row">
             <label for="pizza-size">Select Your Size</label>
             <select class="form-control" id="pizza-size">
               <option value=" Small">Small</option>
               <option value=" Medium">Medium</option>
               <option value=" Large">Large</option>
             </select>
-          </div>
-          <div>
-            <input type="radio" name="size" value="small">Small<br>
-              <h4>12inches</h4>
-            <input type="radio" name="size" value="medium">Medium<br>
-              <h4>14inches</h4>
-            <input type="radio" name="size" value="large">Large<br>
-              <h4>16inches</h4>
-            <input type="radio" name="size" value="Gargantuan">Gargantuan<br>
-              <h4>20inches!</h4>
+          </div>-->
+          <div class="row">
+            <div class="col-md-3 center-text">
+              <input type="radio" name="size" value="small">Small<br>
+                <h4>12inches</h4>
+            </div>
+            <div class="col-md-3 center-text">
+              <input type="radio" name="size" value="medium">Medium<br>
+                <h4>14inches</h4>
+            </div>
+            <div class="col-md-3 center-text">
+              <input type="radio" name="size" value="large">Large<br>
+                <h4>16inches</h4>
+            </div>
+            <div class="col-md-3 center-text">
+              <input type="radio" name="size" value="Gargantuan">Gargantuan<br>
+                <h4>20inches!</h4>
+            </div>
+         </div>
+         <div class="sections">
+             <h2>Select Your Toppings</h2>
+         </div>
+           <div class="row">
+             <h4>Meats</h4>
+           <div class="col-md-3">
+             <input type="checkbox" name="toppings" value="Pepperoni">
+             <label for="toppings-pepperoni">Pepperoni</label>
+           </div>
+           <div class="col-md-3">
+             <input type="checkbox" name="toppings" value="Sausage">
+             <label for="toppings-sausage">Sausage</label>
+           </div>
+           <div class="col-md-3">
+             <input type="checkbox" name="toppings" value="Canadian-Bacon">
+             <label for="toppings-canadian-bacon">Canadian Bacon</label>
+           </div>
+           <div class="col-md-3">
+             <input type="checkbox" name="toppings" value="Anchovies">
+             <label for="toppings-anchovies">Anchovies</label>
+           </div>
         </div>
-
+        <div class="row">
+          <h4>Veggie and Fruits</h4>
+          <div class="col-md-3">
+            <input type="checkbox" name="toppings" value="Green-Peppers">
+            <label for="toppings-green-peppers">Green Peppers</label>
+          </div>
+          <div class="col-md-3">
+            <input type="checkbox" name="toppings" value="Olives">
+            <label for="toppings-olives">Olives</label>
+          </div>
+          <div class="col-md-3">
+            <input type="checkbox" name="toppings" value="Tomatoes">
+            <label for="toppings-tomatoes">Tomatoes</label>
+          </div>
+          <div class="col-md-3">
+            <input type="checkbox" name="toppings" value="Pineapple">
+            <label for="toppings-pineapple">Pineapple</label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success btn-margin">
+          <span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Place Order
+    </form>
 
 
 

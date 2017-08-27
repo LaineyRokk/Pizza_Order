@@ -19,6 +19,31 @@ Pizza.prototype.price = function() {
   } else {
     price += 0;
   }
-
-  
+  this.pieToppings.forEach(function() {
+    price += 1.5;
+  });
+  this.price = price;
 }
+
+//User Interface Logic
+$(document).ready(function() {
+  $("form#order-form").submit(function(event) {
+    event.preventDefault();
+
+    var inputtedPieSize = $("input.piesize").val();
+    var newPizza = new Pizza(inputtedPieSize);
+
+    $.each($("input[name='pietoppings']:checked"), function() {
+      newPizza.pietoppings.push($(this).val());
+    });
+
+    $("ul#order-list")append("<li><button type='submit' class='btn btn-primary btn-margin'>" + newPizza.piesize + "Pizza Order" + "</button></li>");
+
+    $(".pizzaOrder").last().click(funtion() {
+      $("#order-specs").show();
+      $(".pie-size").text(newPizza.piesize);
+      $(".pie-toppings").text(newPizza.pietoppings);
+      $(".order-total").text(newPizza.price());
+    });
+  });
+});

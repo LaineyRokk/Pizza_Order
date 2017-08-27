@@ -13,7 +13,7 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Wheel of Heaven</h1>
-        <p class="solgan">Pizza fit for the gods</p>
+        <p class="slogan">Pizza fit for the gods</p>
       </div>
     </div>
     <div class="container">
@@ -32,24 +32,25 @@
           </div>-->
           <div class="row">
             <div class="col-md-3 center-text">
-              <input type="radio" name="size" value="small">Small<br>
-                <h4>12inches</h4>
+              <input type="radio" name="piesize" value="small">Small<br>
+                <h4>A Small is 12inches ~ <span class="price">$12.00</span></h4>
             </div>
             <div class="col-md-3 center-text">
-              <input type="radio" name="size" value="medium">Medium<br>
-                <h4>14inches</h4>
+              <input type="radio" name="piesize" value="medium">Medium<br>
+                <h4>A Medium is 14inches ~ <span class="price">$14.00</span></h4>
             </div>
             <div class="col-md-3 center-text">
-              <input type="radio" name="size" value="large">Large<br>
-                <h4>16inches</h4>
+              <input type="radio" name="piesize" value="large">Large<br>
+                <h4>A Large is 16inches ~ <span class="price">$16</span></h4>
             </div>
             <div class="col-md-3 center-text">
-              <input type="radio" name="size" value="Gargantuan">Gargantuan<br>
-                <h4>20inches!</h4>
+              <input type="radio" name="piesize" value="gargantuan">Gargantuan<br>
+                <h4>A Gargantuan (a.k.a. Ex-Large) is 20inches! ~ <span class="price">$20.00</span></h4>
             </div>
          </div>
          <div class="sections">
              <h2>Select Your Toppings</h2>
+             <h4>All toppings are an additional <strong>$1.50</strong> each</h4>
          </div>
            <div class="row">
              <h4>Meats</h4>
@@ -90,11 +91,23 @@
           </div>
         </div>
       </div>
-      <button type="submit" class="btn btn-success btn-margin">
-          <span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Place Order
+      <button type="submit" class="btn btn-success btn-margin">Place Order</button>
     </form>
-
-
-
-  </body>
+    <div classs="order">
+      <div id="order-output">
+        <ul id="order-list">
+        </ul>
+      </div>
+    </div>
+    <div class="specs">
+      <div id="order-specs">
+        <h3>Order Specs</h3>
+        <p>Pie Size: <span class="pie-size"></span></p>
+        <p>Pie Toppings: <span class="pie-toppings"></span></p>
+        <p>Order Total:</p>
+        <h3><span class="price-total"></span></h3>
+      </div>
+    </div>
+   </div>
+ </body>
 </html>

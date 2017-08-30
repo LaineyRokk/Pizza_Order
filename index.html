@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.4.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-
-    <title></title>
+    <title>Lainey Rokkan / Pizza Order</title>
   </head>
   <body>
     <div class="container">
@@ -16,30 +14,39 @@
         <p class="slogan">Pizza fit for the gods</p>
       </div>
     </div>
+    <!--pie size-->
     <div class="container">
       <form id="order-form">
         <div class="form-group">
           <div class="sections">
-            <h2>Size of Your Pie?</h2>
+            <div>
+              <h2>Size of Your Pie?</h2>
+            </div>
+          </div>
+          <div class="row">
+            <label for="pie-size">Choose The Size of Your Pizza Pie:</label>
+            <select class="form-control" id="pie-size">
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Large">Large</option>
+              <option value="Gargantuan">Gargantuan</option>
+            </select>
           </div>
           <div class="row">
             <div class="col-md-3 center-text">
-              <input type="radio" name="piesize" value="small">Small<br>
-                <h4>A Small is 12inches ~ <span class="price">$12.00</span></h4>
+              <h4>Small are 12"</h4>
             </div>
             <div class="col-md-3 center-text">
-              <input type="radio" name="piesize" value="medium">Medium<br>
-                <h4>A Medium is 14inches ~ <span class="price">$14.00</span></h4>
+              <h4>Medium are 14"</h4>
             </div>
             <div class="col-md-3 center-text">
-              <input type="radio" name="piesize" value="large" checked>Large<br>
-                <h4>A Large is 16inches ~ <span class="price">$16</span></h4>
+              <h4>Large are 16"</h4>
             </div>
             <div class="col-md-3 center-text">
-              <input type="radio" name="piesize" value="gargantuan">Gargantuan<br>
-                <h4>A Gargantuan (a.k.a. Ex-Large) is 20inches! ~ <span class="price">$20.00</span></h4>
+              <h4>Gargantuan (a.k.a. Ex-Large) are 20!"</h4>
             </div>
-         </div>
+            <ig src="img/sizes.jpg" alt"Pizza Pie Size Chart" class="img-responsive size-chart">
+          </div>
          <div class="sections">
              <h2>Select Your Toppings</h2>
              <h4>All toppings are an additional <strong>$1.50</strong> each</h4>

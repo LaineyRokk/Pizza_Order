@@ -1,4 +1,41 @@
-body {
-  background: linear-gradient(to right, #0b486b, #f56217);
-  background: linear-gradient(to right, #f56217, #0b486b);
+.jumbotron {
+  margin-top: 60px;
+  border-style: groove;
+  padding-top: 80px;
+  padding-botton: 60;
+  background-image: url(img/wheel-wall.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: #604020;
+   text-align: center;
+   text-shadow: black 0.1em 0.1em 0.1em, white 0.1em 0.1em 0.1em;
+}
+
+.chart-label {
+  text-align: center;
+}
+
+.img-responsivethumbnail {
+  margin-bottome: 25px:
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+button {
+  cursor: pointer;
+  color: #00e600;
+}
+
+.btn-margin {
+  margin-bottom: 25px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+#order-specifications {
+  display: none;
 }

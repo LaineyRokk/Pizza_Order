@@ -3,29 +3,32 @@ body {
 }
 
 .jumbotron {
-  margin-top: 60px;
-  border-style: groove;
-  padding-top: 80px;
-  padding-botton: 60;
-  /*background-image: url(http://www.india-tourism-office.com/images/konrak4.jpg)*/
-  background-position: center;
+  margin-top: 70px;
+  /*border-style: groove;*/
+  /*padding-top: 80px;
+  padding-botton: 60;*/
+  /*background-image: url(http://www.india-tourism-office.com/images/konrak4.jpg)
   background-size: cover;
+  height: 100%;
   background-repeat: no-repeat;
+  background-position: center;*/
   background-color: #604020;
+  font-family: fantasy;
   color: white;
   text-align: center;
-  text-shadow: black 0.1em 0.1em 0.1em, white 0.1em 0.1em 0.1em;
+  text-shadow: black 0.3em 0.3em 0.3em, white 0.1em 0.1em 0.1em;
 }
 
-img {
+/*img {
   border-radius: 50%;
   max-width: 100%;
   height: auto;
   opacity: .7;
-}
+}*/
 
 .chart-label {
   text-align: center;
+  
 }
 
 /*.img-responsiveThumbnail {*/

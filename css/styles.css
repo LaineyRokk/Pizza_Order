@@ -15,11 +15,11 @@
 .chart-label {
   text-align: center;
 }
-
-.img-responsivethumbnail {
-  margin-bottome: 25px:
-  margin-left: 25px;
-  margin-right: 25px;
+0
+/*.img-responsiveThumbnail {*/
+  /*margin-bottome: 25px:*/
+  /*margin-left: 25px;*/
+  /*margin-right: 25px;*/
 }
 
 button {
@@ -32,10 +32,11 @@ button {
 }
 
 ul {
-  list-style: none;
+  list-style: circle;
   margin-left: 0;
 }
 
-#order-specifications {
+#orderSpecifications {
   display: none;
 }
+-

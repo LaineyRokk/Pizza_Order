@@ -1,29 +1,29 @@
 //Business Logic
 
+// Constructor
 function Pizza(size) {
-  this.piesize = size;
-  this.pietoppings = [];
+  this.pieSize = size;
+  this.pieToppings = [];
 };
+// Prototype Order Total Cost
+Pizza.prototype.cost = function() {
+  var cost = 12;
 
-Pizza.prototype.price = function() {
-  var price = 12;
-
-  if(this.piesize === "ex-large") {
+  if(this.pieSize === "Ex-Large") {
     price += 8;
-  } else if (this.piesize === "large") {
+  } else if (this.pieSize === "Large") {
     price += 4;
-  } else if (this.piesize === "medium") {
+  } else if (this.pieSize === "Medium") {
     price += 2;
   } else {
     price += 0;
   }
-
   this.pieToppings.forEach(function() {
-    price += 1.5;
-  }
+    cost += 1.5;
+  });
 
   this.price = price;
-});
+}
 
 //User Interface Logic
 $(document).ready(function() {
@@ -37,13 +37,15 @@ $(document).ready(function() {
       newPizza.pietoppings.push($(this).val());
     });
 
-    $("ul#order-list").append("<li><button type='submit' class='btn btn-primary btn-margin'>" + newPizza.piesize + "Pizza Order" + "</button></li>");
+    $("ul#order-list").append("<li><button type='submit' class='btn btn-primary btn-margin'><span class='pizzaOrder'>" + newPizza.pizzasize + " Pizza Order" + "</button></span></li>");
+
+    $(".pizzaOrder").last().click(function() {
 
     $(".pizzaOrder").last().click(funtion() {
-      $("#order-specifications").show();
-      $(".pie-size").text(newPizza.piesize);
-      $(".pie-toppings").text(newPizza.pietoppings);
-      $(".order-total").text(newPizza.price());
+      $("#orderSpecifications").show();
+      $(".pieSize").text(newPizza.piesize);
+      $(".pieToppings").text(newPizza.pietoppings);
+      $(".order-total").text(newPizza.cost());
     });
   });
 });

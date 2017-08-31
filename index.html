@@ -25,7 +25,7 @@
           </div>
           <div class="row">
             <label for="pie-size">Choose The Size of Your Pizza Pie:</label>
-            <select class="form-control" id="pie-size">
+            <select class="form-control" id="pieSize">
               <option value="Small">Small</option>
               <option value="Medium">Medium</option>
               <option value="Large">Large</option>
@@ -51,27 +51,28 @@
              <h2>Select Your Toppings</h2>
              <h4>All toppings are an additional <strong>$1.50</strong> each</h4>
          </div>
+         <div class="pietoppings">
            <div class="row">
              <h4>Meats</h4>
            <div class="col-md-3">
-             <input type="checkbox" name="pietoppings" value="Pepperoni">
+             <input type="checkbox" name="pieToppings" value="Pepperoni">
              <label for="pietoppings-pepperoni">Pepperoni</label>
-             <img src="img/pepperoni.jpg" alt="Topping: Pepperoni" class="img-responsive thumbnail">
+             <!-- <img src="img/pepperoni.jpg" alt="Topping: Pepperoni" class="img-responsive thumbnail"> -->
            </div>
            <div class="col-md-3">
              <input type="checkbox" name="pietoppings" value="Sausage">
              <label for="pietoppings-sausage">Sausage</label>
-             <img src="img/sausage.jpg" alt="Topping: Saugsage" class="img-responsive thumbnail">
+             <!-- <img src="img/sausage.jpg" alt="Topping: Saugsage" class="img-responsive thumbnail"> -->
            </div>
            <div class="col-md-3">
              <input type="checkbox" name="pietoppings" value="Canadian-Bacon">
              <label for="pietoppings-canadian-bacon">Canadian Bacon</label>
-             <img src="img/can-bac.jpg" alt="Topping: Canadian-Bacon" class="img-responsive thumbnail">
+             <!-- <img src="img/can-bac.jpg" alt="Topping: Canadian-Bacon" class="img-responsive thumbnail"> -->
            </div>
            <div class="col-md-3">
              <input type="checkbox" name="pietoppings" value="Anchovies">
              <label for="pietoppings-anchovies">Anchovies</label>
-             <img src="img/anchovies.jpg" alt="Topping: Anchovies" class="img-responsive thumbnail">
+             <!-- <img src="img/anchovies.jpg" alt="Topping: Anchovies" class="img-responsive thumbnail"> -->
            </div>
         </div>
         <div class="row">
@@ -79,22 +80,22 @@
           <div class="col-md-3">
             <input type="checkbox" name="pietoppings" value="Green-Peppers">
             <label for="pietoppings-green-peppers">Green Peppers</label>
-            <img src="img/pepper.jpg" alt="Topping: Green-Peppers" class="img-responsive thumbnail">
+            <!-- <img src="img/pepper.jpg" alt="Topping: Green-Peppers" class="img-responsive thumbnail"><br> -->
           </div>
           <div class="col-md-3">
             <input type="checkbox" name="pietoppings" value="Olives">
             <label for="pietoppings-olives">Olives</label>
-            <img src="img/olives.jpg" alt="Topping: Olives" class="img-responsive thumbnail">
+            <!-- <img src="img/olives.jpg" alt="Topping: Olives" class="img-responsive thumbnail"><br> -->
           </div>
           <div class="col-md-3">
             <input type="checkbox" name="pietoppings" value="Tomatoes">
             <label for="pietoppings-tomatoes">Tomatoes</label>
-            <img src="img/tomatoes.jpg" alt="Topping: Tomatoes" class="img-responsive thumbnail">
+            <!-- <img src="img/tomatoes.jpg" alt="Topping: Tomatoes" class="img-responsive thumbnail"><br> -->
           </div>
           <div class="col-md-3">
             <input type="checkbox" name="pietoppings" value="Pineapple">
             <label for="pietoppings-pineapple">Pineapple</label>
-            <img src="img/pineapple.jpg" alt="Topping: Pinapple" class="img-responsive thumbnail">
+            <!-- <img src="img/pineapple.jpg" alt="Topping: Pinapple" class="img-responsive thumbnail"> -->
           </div>
         </div>
       </div>
@@ -107,7 +108,7 @@
       </div>
     </div>
     <div class="row">
-      <div id="order-specifications">
+      <div id="orderSpecifications">
         <h3>Order Specs</h3>
         <p>Pie Size: <span class="pie-size"></span></p>
         <p>Pie Toppings: <span class="pie-toppings"></span></p>

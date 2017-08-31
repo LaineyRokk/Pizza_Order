@@ -10,38 +10,38 @@ Pizza.prototype.cost = function() {
   var cost = 12;
 
   if(this.pieSize === "Ex-Large") {
-    price += 8;
+    cost += 8;
   } else if (this.pieSize === "Large") {
-    price += 4;
+    cost += 4;
   } else if (this.pieSize === "Medium") {
-    price += 2;
+    cost += 2;
   } else {
-    price += 0;
+    cost += 0;
   }
   this.pieToppings.forEach(function() {
     cost += 1.5;
   });
 
-  this.price = price;
-}
+  this.cost = cost;
+};
 
 //User Interface Logic
 $(document).ready(function() {
   $("form#order-form").submit(function(event) {
     event.preventDefault();
 
-    var inputtedPieSize = $("select#pie-size").val();
+    var inputtedPieSize = $("select#pieSize").val();
     var newPizza = new Pizza(inputtedPieSize);
 
-    $.each($("input[name='pietoppings']:checked"), function() {
-      newPizza.pietoppings.push($(this).val());
+    $.each($("input[name='toppings']:checked"), function() {
+      newPizza.pieToppings.push($(this).val());
     });
 
-    $("ul#order-list").append("<li><button type='submit' class='btn btn-primary btn-margin'><span class='pizzaOrder'>" + newPizza.pizzasize + " Pizza Order" + "</button></span></li>");
+    $("ul#order-list").append("<li><button type='submit' class='btn btn-primary btn-margin'></li>");
 
-    $(".pizzaOrder").last().click(funtion() {
+    $(".pizzaOrder").click(funtion() {
       $("#orderSpecifications").show();
-      $(".pieSize").text(newPizza.pieSize);
+      $("#pieSize").text(newPizza.pieSize);
       $(".pieToppings").text(newPizza.pieToppings);
       $(".order-total").text(newPizza.cost());
     });

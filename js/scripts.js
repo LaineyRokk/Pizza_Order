@@ -39,13 +39,12 @@ $(document).ready(function() {
 
     $("ul#order-list").append("<li><button type='submit' class='btn btn-primary btn-margin'><span class='pizzaOrder'>" + newPizza.pizzasize + " Pizza Order" + "</button></span></li>");
 
-    $(".pizzaOrder").last().click(function() {
-
     $(".pizzaOrder").last().click(funtion() {
       $("#orderSpecifications").show();
-      $(".pieSize").text(newPizza.piesize);
-      $(".pieToppings").text(newPizza.pietoppings);
+      $(".pieSize").text(newPizza.pieSize);
+      $(".pieToppings").text(newPizza.pieToppings);
       $(".order-total").text(newPizza.cost());
     });
   });
+});
 });

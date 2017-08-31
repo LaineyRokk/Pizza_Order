@@ -1,21 +1,33 @@
+body {
+  background
+}
+
 .jumbotron {
   margin-top: 60px;
   border-style: groove;
   padding-top: 80px;
   padding-botton: 60;
-  background-image: url(img/wheel-wall.jpeg);
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   color: #604020;
-   text-align: center;
-   text-shadow: black 0.1em 0.1em 0.1em, white 0.1em 0.1em 0.1em;
+  /*background-image: url(http://www.india-tourism-office.com/images/konrak4.jpg)*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #604020;
+  color: white;
+  text-align: center;
+  text-shadow: black 0.1em 0.1em 0.1em, white 0.1em 0.1em 0.1em;
+}
+
+img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  opacity: .7;
 }
 
 .chart-label {
   text-align: center;
 }
-0
+
 /*.img-responsiveThumbnail {*/
   /*margin-bottome: 25px:*/
   /*margin-left: 25px;*/
